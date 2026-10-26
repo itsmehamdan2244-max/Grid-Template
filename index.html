@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body {
+            align-content: center;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(13, 30px);
+            /* margin: auto; */
+            justify-content: center;
+            text-align: center;
+            margin: 10px;
+        }
+        .box {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .header {
+            background-color: rgba(0, 0, 0, 0.789);
+            color: antiquewhite;
+        }
+        .hero {
+            background-color: rgba(93, 156, 198, 0.986);
+            grid-column: span 4;
+            text-align: center;
+            grid-row: span 6;
+            color: antiquewhite;
+        }
+        .menu {
+            color: antiquewhite;
+            grid-column: span 3;
+            background-color: red;
+        }
+        .main {
+            color: antiquewhite;
+            grid-column: span 2;
+            grid-row: span 4;
+            background-color: rgb(44, 84, 202);
+        }
+        .blank {
+            grid-row: span 2;
+            grid-column: span 1;
+        }
+        .image {
+            grid-row: span 2;
+            background-color: rgb(15, 140, 186);
+        } 
+        .extra {
+              grid-row: span 2;
+            background-color: rgba(11, 212, 155);
+        }
+        .banner {
+            grid-column: span 4;
+            grid-row: span 2;
+            background-color: rgb(214, 200, 78);
+        }
+       
+            </style>
+</head>
+<body>
+    <div class="container">
+        <div class=" box header">HEADER</div>
+        <div class=" box menu">MENU</div>
+        <div class=" box hero">HERO</div>
+        <div class=" box main">MAIN</div>
+        <div class=" box blank"></div>
+        <div class=" box image">IMAGE</div>
+        <div class=" box blank"></div>
+        <div class=" box extra">EXTRA</div>
+        <div class=" box banner">BANNER</div>
+    </div>
+</body>
+</html>
